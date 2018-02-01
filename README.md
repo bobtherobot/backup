@@ -2,9 +2,9 @@
 
 v 1.0
 
-Backup is a simple shell script for backing up files from one drive to another. 
+Backup is a simple macOS shell script for backing up files from one drive to another. 
 
-- Backed up files are clear and accessable through the file system, and don't require any kind of special software to access them.
+- Backed up files are clear and accessible through the file system, and don't require any kind of special software to access them.
 - Backup is based off of [Mike Rubel's original abstract](http://www.mikerubel.org/computers/rsync_snapshots/). But it's been simplified and developed specifically for macOS.
 - Leverages [__rsync__](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/rsync.1.html) with "hard links" to minimize data usage on the backup drive, however finalized "deep" storage archives in the "monthly" folder are decoupled to physical files. All other backup locations maintain "hard links".
 
@@ -14,7 +14,7 @@ Make the "backup.sh" file executable:
 
 	chmod +x backup.sh
 
-Edit "backup.sh" and adujst the "locations" section to point to source and destination folders:
+Edit "backup.sh" and adjust the "locations" section to point to source and destination folders:
 
 	# Locations
 	# ----------------------------
@@ -54,9 +54,9 @@ Run from the command line with the following:
 	cd /scripts/rsync
 	./backup.sh
 
-By default (without flag/agument) will do whatever needs to be done.
+By default (without flag/argument) will do whatever needs to be done.
 
-> Backup figures out what needs to be done based on previous backup session by reading the timestamp in "_LAST_X" to see when X was last run, and deciding whtat to do accordingly.
+> Backup figures out what needs to be done based on previous backup session by reading the timestamp in "_LAST_X" to see when X was last run, and deciding what to do accordingly.
 
 ### Flags
 
