@@ -1,0 +1,9 @@
+.Spotlight-*/
+.Trashes
+.DS_Store
+.fseventsd
+.com.apple.timemachine.donotpresent
+*/.Trash
+.DocumentRevisions-V100
+.TemporaryItems
+*.app/*
